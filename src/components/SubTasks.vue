@@ -46,11 +46,13 @@ export default {
   },
   methods: {
     addSubtask() {
-      this.$store.commit('ADD_SUBTASK', {
-        taskId: this.taskId,
-        subtaskText: this.newSubtaskText
-      });
-      this.newSubtaskText = '';
+      if (this.newSubtaskText !== '') {
+        this.$store.commit('ADD_SUBTASK', {
+          taskId: this.taskId,
+          subtaskText: this.newSubtaskText
+        });
+        this.newSubtaskText = '';
+      }
     },
     deleteSubtask(subtaskId) {
       this.$store.commit('DELETE_SUBTASK', {
