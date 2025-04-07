@@ -8,6 +8,7 @@
 
 #app {
   max-width: 500px;
+  width: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -145,6 +146,23 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
+}
+
+@media (max-width: 425px) {
+  .footer {
+    font-size: 16px;
+    gap: 20px;
+    padding-inline: 15px;
+  }
+
+  .footer__display-tasks {
+    gap: 5px;
+  }
+
+  .body {
+    padding: 15px;
+    gap: 15px;
+  }
 }
 
 .add-main-task {
