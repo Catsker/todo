@@ -32,7 +32,6 @@ html, body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
 }
 
 input, button, textarea {
@@ -82,7 +81,13 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     background: linear-gradient(131deg, #ff7e5f 0.56%, #feb567 100%);
     position: relative;
+    padding-inline: 15px;
 }
+
+/*.add-main-task__input::placeholder {*/
+/*    padding: 0;*/
+/*    text-align: center;*/
+/*}*/
 
 .background::before {
     content: '';
